@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/getDataFragment">
+
+    <fragment
+        android:id="@+id/getDataFragment"
+        android:name="mahmoud.nousir.madarsofttask.ui.GetDataFragment"
+        android:label="GetDataFragment" >
+        <action
+            android:id="@+id/action_getDataFragment_to_showDataFragment"
+            app:destination="@id/showDataFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDataFragment"
+        android:name="mahmoud.nousir.madarsofttask.ui.ShowDataFragment"
+        android:label="ShowDataFragment" />
+</navigation>
