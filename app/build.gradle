@@ -58,7 +58,4 @@ dependencies {
     implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.room:room-ktx:$room_version"
     kapt "androidx.room:room-compiler:$room_version"
-
-    //keyboard_visibility_event
-    implementation "net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:$keyboard_visibility_event"
 }

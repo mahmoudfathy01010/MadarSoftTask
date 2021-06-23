@@ -48,9 +48,7 @@ class GetDataFragment : Fragment() {
         }
 
         viewModel.isVerified.observe(viewLifecycleOwner, Observer { isVerified->
-            if(isVerified){
-                binding.enterData.isEnabled=true
-            }
+            binding.enterData.isEnabled = isVerified
         })
 
         viewModel.isSaved.observe(viewLifecycleOwner, Observer {
